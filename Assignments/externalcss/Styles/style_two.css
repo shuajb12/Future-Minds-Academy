@@ -1,0 +1,13 @@
+h1{
+    background-color: rgb(255, 0, 128);
+    color: rgb(149, 165, 42);
+}
+p{
+    width: 200px;
+    color: rgb(255, 0, 8);
+}
+h2{
+    background-color: rgb(30, 0, 255);
+    width: 400px;
+    color: rgb(128, 64, 0);
+}
