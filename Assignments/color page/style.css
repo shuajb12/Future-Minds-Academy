@@ -1,0 +1,17 @@
+body{
+    background-size: cover;
+    background-position: center;
+    background-image: url(./monkey.jpg);
+}
+h1 {
+    color: blue;
+    background-color: brown;
+}
+
+img {
+    background-color: rgba(255,128,0,0.4);
+}
+ul{
+    color: blueviolet;
+    background-color: rgb(11, 11, 11);
+}
