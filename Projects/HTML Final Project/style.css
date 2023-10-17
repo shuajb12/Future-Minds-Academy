@@ -1,0 +1,73 @@
+.home1{
+    background-color: rgb(18, 18, 17);
+    color: blue;
+    border-radius: 20px;
+    padding: 3%;
+    text-align: center;
+    margin: 2% 10%;
+    
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 36%, rgba(253,45,241,1) 95%);
+margin: 3% 10%;
+}
+nav{
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+}
+.navigacion{
+    list-style: none;
+    margin: 5px;
+}
+
+ul li{
+    display: inline;
+    padding: 0%;
+    margin: 0%;
+  }
+  .section1{
+    background-color: black;
+    color: blueviolet;
+    padding: 0%;
+    text-align: center;
+  }
+.navigation-link{
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+.edu{
+    text-align: center;
+    padding: 10px;
+}
+.education{
+    background-color: rgb(1, 1, 10);
+    color: rgb(12, 12, 12);
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 36%, rgba(253,45,241,1) 95%);
+
+}
+.education2{
+  
+    color: blueviolet;
+    text-align: center;
+    border-radius: 2%;
+    margin: auto;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 36%, rgba(253,45,241,1) 95%);
+}
+.education3{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 31%, rgba(253,187,45,1) 100%);
+ padding: 10px;
+}
+ img{
+    background-image:url(./img/raining.jpg) ;
+ }
+ body{
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img/raining.jpg);
+opacity:1.0;
+}
