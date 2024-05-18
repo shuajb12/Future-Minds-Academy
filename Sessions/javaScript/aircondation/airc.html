@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Condationer</title>
+    <style>
+        .bgr {
+            position: relative;
+            background: url(./air.png) no-repeat;
+            height: 451px;
+            width: 406px;
+            padding-top: 50px;
+        }
+
+        .bgr h3 {
+            text-align: center;
+        }
+
+        select {
+            width: 300px;
+            margin-left: 10px;
+        }
+    </style>
+
+<body>
+
+        <div class="bgr" id="ac">
+            <h3 id="temp">0</h3>
+        </div>
+        <select name="" id="tempSelect">
+
+        </select>
+
+        <script>
+            const tempSelect = document.querySelector("#tempSelect")
+            const temp = document.querySelector("#temp")
+            let alloption = "";
+            for (let i = 0; i <= 30; i++) {
+
+                if (i == 0) {
+                    alloption += `<option value="off">Off</option>`;
+                }
+
+                else {
+                    alloption += `<option value="${i}">${i}</option>`;
+                }
+            }
+            tempSelect.innerHTML = alloption;
+            tempSelect.addEventListener("change", function (e) {
+                temp.textContent = e.target.value;
+            })
+        </script>
+</body>
+</html>

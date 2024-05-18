@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    .container {
+        position: relative;
+        margin-top: 30px;
+        margin-left: 20px;
+        background-color: aqua;
+        border: 2px solid black;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        width: 600px;
+        box-shadow: 4px 4px 4px 4px rgb(36, 236, 236);
+        width: 200px;
+    }
+</style>
+<main>
+
+    <body>
+        <main class="container">
+            <h2>Log in</h2>
+
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <br>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <br>
+            <div>
+                <button onclick="checkCredentials()">Login</button>
+            </div>
+        </main>
+
+        <script>
+            function checkCredentials() {
+                let username = document.getElementById('username').value;
+                let password = document.getElementById('password').value;
+
+                let correctUsername = "Remzije";
+                let correctPassword = "12345678";
+
+                if (username === correctUsername && password === correctPassword) {
+                    alert("Welcome!");
+                } else {
+                    alert("Wrong credentials.");
+                }
+            }
+        </script>
+    </body>
+
+</html>
