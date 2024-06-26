@@ -4,42 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The first native api</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Native Api</title>
 </head>
 
 <body>
-    <script class="container">
-        let website  =  prompt("Cilën faqe web dëshiron të vizitosh? ( google, facebook, youtube, microsoft)");
-
-        if (website !== null) {
-            website = website.trim().toLowerCase();
-
-            if (website === 'google' || website === 'youtube' || website === 'microsoft') {
-                let query = prompt(`Çfarë dëshiron të kërkosh në ${website.charAt(0).toUpperCase() + website.slice(1)}?`);
-                if (query !== null) {
-
-                    if (website === 'google') {
-                       
-                        location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-                    }
-
-                    else if (website === 'youtube') {
-                        location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
-                    }
-
-                    else if (website === 'microsoft') {
-                         location.href = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
-                         element.style.color = "green";
-
-                    }
-                }
-            }
-            
-             else {
-                location.href = `https://www.${website}.com`;
-            }
-        }
+    <script>
+        let userInput = prompt("Enter The Website");
+        location.href = `https://www.${userInput}.com/`;
     </script>
 </body>
 

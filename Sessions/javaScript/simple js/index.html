@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J</title>
+</head>
+
+<body>
+
+    <script>
+        let kilometers = parseFloat(prompt("Enter the number of kilometers:"));
+        let miles = Math.round(convertKmToMiles(kilometers));
+
+        function convertKmToMiles(kilometers) {
+            return kilometers / 1.6;
+        }
+
+        alert(kilometers + " kilometers eshte " + miles + " miles.");
+    </script>
+</body>
+
+</html>
