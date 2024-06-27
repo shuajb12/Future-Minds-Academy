@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let letter = prompt("Write a letter:");
+
+        let vowels = 'aeioyu';
+
+        let consonants = 'bcdfghjklmnpqrstvxzwy';
+
+        let numbers = '1234567890';
+
+        let symbols = '!@#$%^&*()_+-={}[]|:";<>,.?/`~';
+
+        letter = letter.toLowerCase();
+
+        if (letter.length !== 1) {
+            alert('you need to type only one letter.')
+        }
+        else {
+            if (vowels.includes(letter)) {
+                alert('This letter is a vowel.')
+            }
+
+            else if (consonants.includes(letter)) {
+                alert('The letter is a consonant.')
+            }
+
+            else if (numbers.includes(letter)) {
+                alert('The letter is a number.')
+            }
+
+            else if (symbols.includes(letter)) {
+                alert('The letter is a symbol.')
+            }
+
+            else {
+                alert('The Character isnt vowel, consonant, number or a symbol')
+            }
+        }
+    </script>
+</body>
+
+</html>

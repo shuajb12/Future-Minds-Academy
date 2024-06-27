@@ -1,0 +1,39 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let a = parseInt(prompt('First Number:'));
+
+        let b = parseInt(prompt('Second Number:'));
+
+        let c = parseInt(prompt('Third Number:'));
+
+        //logic
+
+        if (a > b && a > c) {
+            alert(`The biggest number is ${a}`)
+        }
+
+        else if (b > a && b > c) {
+            alert(`The biggest number is ${b}`)
+        }
+
+        else if (c > a && c > b) {
+            alert(`The biggest number is ${c}`)
+        }
+
+        else {
+            throw new Error('Invalid Input')
+        }
+    </script>
+</body>
+
+</html>

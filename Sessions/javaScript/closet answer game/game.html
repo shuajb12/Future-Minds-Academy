@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .result-contanier {
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: darkslategray;
+        }
+
+        .answer {
+            grid-column: span 2;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 1.6rem;
+            font-weight: 1.6rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .player-answer {
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+    <div class="result-contanier">
+        <div class="answer" id="answer"></div>
+        <div class="player-answer" id="playerOne"></div>
+        <div class="player-answer" id="playerTwo"></div>
+    </div>
+
+    <script>
+        let random = Math.floor(Math.random() * 20) + 1;
+
+        //input
+        let playerOneAnswer = parseInt(prompt('Player 1:'));
+        let playerTwoAnswer = parseInt(prompt('Player 2:'));
+
+        //validation
+        if (isNaN(playerOneAnswer) || isNaN(playerTwoAnswer)
+            || playerOneAnswer < 0 || playerOneAnswer > 20
+            || playerTwoAnswer < 0 || playerTwoAnswer > 20)
+            throw new Error('Invalid Input!');
+
+        //logic
+        let playerOneDistance = Math.abs(random - playerOneAnswer)
+        let playerTwoDistance = Math.abs(random - playerTwoAnswer)
+
+        let winner;
+
+        if (playerOneDistance < playerTwoDistance) {
+            winner = 'player 1'
+        }
+
+        else if (playerTwoDistance < playerOneDistance) {
+            winner = 'player 2'
+        }
+        else {
+            winner = 'Tie'
+        }
+
+
+        //output
+        document.getElementById('answer').textContent = `The correct answer is ${random}`;
+        document.getElementById('playerOne').textContent = playerOneAnswer;
+        document.getElementById('playerTwo').textContent = playerTwoAnswer;
+
+        if (winner === 'player 1') {
+            document.getElementById('playerOne').style.backgroundColor = 'green'
+            document.getElementById('playerTwo').style.backgroundColor = 'red'
+        }
+
+        else if (winner === 'player 2') {
+            document.getElementById('playerOne').style.backgroundColor = 'red'
+            document.getElementById('playerTwo').style.backgroundColor = 'green'
+        }
+
+        else {
+            document.getElementById('playerOne').style.backgroundColor = 'orange'
+            document.getElementById('playerTwo').style.backgroundColor = 'orange'
+        }
+
+    </script>
+</body>
+
+</html>
