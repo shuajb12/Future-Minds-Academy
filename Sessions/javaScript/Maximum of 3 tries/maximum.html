@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum of 3 tries</title>
+</head>
+<body>
+    <script>
+        const correctPassword = '12341234';
+let userInput;
+let tries = 0;
+const maxTries = 3;
+
+do {
+    userInput = prompt(`Enter the password (Attempts left: ${maxTries - tries}):`);
+
+    if (userInput === correctPassword) {
+        alert("Welcome!");
+        break; 
+    } else {
+        if (tries < maxTries) {
+            alert(`Incorrect password. You have ${maxTries - tries} ${maxTries - tries === 1 ? "try" : "tries"} left.`);
+        } else {
+            alert("Sorry, you've exceeded the maximum number of tries. You can't try anymore.");
+        }
+    }
+} while (tries < maxTries);
+    </script>
+</body>
+</html>
