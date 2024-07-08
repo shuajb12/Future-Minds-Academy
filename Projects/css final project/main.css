@@ -13,13 +13,14 @@ body {
 }
 
 aside {
-    background-image: url("/Future-Minds-Acadamy/assets/images/sidebar-1.jpg");
+    background-image: url("./assets/images/sidebar-1.jpg");
     background-repeat: no-repeat;
     background-blend-mode: color;
     background-color: rgba(0, 0, 0, 0.772);
     height: auto;
     width: 15vw;
     padding: 30px;
+    height: 200vh;
 }
 
 .flexDirection {
@@ -60,10 +61,6 @@ aside {
 
 .borderbottom {
     border-bottom: 2px solid white;
-}
-
-hr {
-    color: white;
 }
 
 .black {
@@ -181,24 +178,25 @@ header {
 
 .pos {
     position: absolute;
-    top: 9%;
+    top: 100%;
 }
 
 .pos1 {
     position: absolute;
-    top: 17.5%;
-    left: 25.5%;
-    background-color: green;
+    top: 14.5%;
+    left: 23.5%;
+    background-color: rgb(11, 143, 11);
     padding: 6px;
-    border-radius: 3px;
-    padding: 10px;
+    border-radius: 2px;
+    padding: 15px;
     box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 99, 0, 0.712);
 }
 
 .pos2 {
     position: absolute;
-    top: 22%;
-    left: 30.5%;
+    top: 18%;
+    left: 28.5%;
+    font-size: 20px;
 }
 
 .paddingD {
@@ -213,8 +211,6 @@ header {
     margin-left: 3%;
 }
 
-
-
 .marginR {
     margin-right: 3%;
 }
@@ -223,10 +219,19 @@ header {
     width: 30vw;
 }
 
+hr {
+    color: white;
+}
+
 .hr {
-    position: absolute;
     width: 400px;
     left: 24%;
+}
+
+.hr1 {
+    position: absolute;
+    width: 400px;
+    left: 63.1%;
 }
 
 .jsCLeft {
@@ -236,7 +241,7 @@ header {
 .pos3 {
     position: absolute;
     top: 500px;
-    left: 300px;
+    left: 350px;
     background-color: orange;
     padding: 20px;
     border-radius: 3px;
@@ -253,7 +258,7 @@ header {
 .pos4 {
     position: absolute;
     top: 500px;
-    left: 795px;
+    left: 940px;
     background-color: darkred;
     padding: 20px;
     border-radius: 3px;
@@ -262,7 +267,7 @@ header {
 .pos5 {
     position: absolute;
     top: 650px;
-    left: 300px;
+    left: 350px;
     background-color: green;
     padding: 20px;
     border-radius: 3px;
@@ -271,19 +276,14 @@ header {
 .pos6 {
     position: absolute;
     top: 650px;
-    left: 795px;
+    left: 940px;
     background-color: lightskyblue;
     padding: 20px;
     border-radius: 3px;
 }
 
-.hr1 {
-    position: absolute;
-    width: 400px;
-    left: 63.1%;
-}
 
-.hr2 {
+.rr2 {
     position: absolute;
     width: 400px;
     left: 63.1%;
@@ -297,28 +297,26 @@ header {
     justify-content: center;
 }
 
-.pos7 {
-    position: absolute;
-    top: 950px;
-    transition: 2s ease-in-out;
-}
-
 .pos7h1 {
     position: absolute;
     top: 1100px;
-    left: 325px;
+    left: 400px;
+}
+.right {
+    position: absolute;
+    right: 322px;
 }
 
 .pos7h11 {
     position: absolute;
     top: 1100px;
-    left: 685px;
+    left: 830px;
 }
 
 .pos7h111 {
     position: absolute;
     top: 1100px;
-    left: 1000px;
+    left: 1210px;
 }
 
 .Card1 {
@@ -328,34 +326,52 @@ header {
     margin-left: 4%;
     padding: 30px;
     height: 350px;
-    transition: 2s ease-in-out;
 }
 
 .posP {
     position: relative;
-    top: 150px;
+    top: 30px;
+}
+
+.posp2 {
+    position: relative;
+    top: 175px;
 }
 
 .marginT {
     margin-top: 100px;
-}
+} 
 
 .W {
     width: 100vw;
-}
+} 
 
+.pos7 {
+    left: 400px;
+    position: absolute;
+    top: 950px;
+    transition: 1s ease-in-out;
+}
 .pos7:hover {
     top: 910px;
 }
 
 .pos8 {
     position: relative;
-    top: 60px;
-    left: 400px;
+    top: -50px;
+    left: 40px;
+    transition: 5s ease-in-out;
+}
+.pos8:hover {
+    top: -910px;
 }
 
 .pos9 {
     position: relative;
-    top: 33px;
-    left: 440px;
+    top: -50px;
+    transition: 5s ease-in-out;
+    left: 40px;
+}
+.pos9:hover {
+    top: -910px;
 }
